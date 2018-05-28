@@ -1,0 +1,10 @@
+<Titles /> {/* to insert a component, type in a name with a self closing name tab */}
+        <Form getWeather={this.getWeather}/>  {/* Giving Form component access to getWeather function here using 'props' */}
+        <Weather 
+          temperature={this.state.temperature}
+          city={this.state.city}
+          country={this.state.country}
+          humidity={this.state.humidity}
+          description={this.state.description}
+          error={this.state.error}
+          />
